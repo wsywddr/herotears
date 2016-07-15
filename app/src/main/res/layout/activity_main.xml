@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:id="@+id/fragments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/line"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_above="@+id/menus"
+            android:layout_width="match_parent"
+            android:background="@color/lightgray"
+            android:layout_height="0.5dp"/>
+
+        <LinearLayout
+            android:id="@+id/menus"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_activity_bottom_menus_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/whitesmoke"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rb_business"
+                    style="@style/MainActivityBottomMenuItem"
+                    android:text="business"
+                    android:drawableTop="@drawable/tab_business_selector"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:id="@+id/rb_order"
+                    style="@style/MainActivityBottomMenuItem"
+                    android:drawableTop="@drawable/tab_order_selector"
+                    android:text="order"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:id="@+id/rb_message"
+                    style="@style/MainActivityBottomMenuItem"
+                    android:drawableTop="@drawable/tab_message_selector"
+                    android:text="message"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:id="@+id/rb_wallet"
+                    style="@style/MainActivityBottomMenuItem"
+                    android:drawableTop="@drawable/tab_wallet_selector"
+                    android:text="wallet" />
+
+                <RadioButton
+                    android:id="@+id/rb_push"
+                    style="@style/MainActivityBottomMenuItem"
+                    android:drawableTop="@drawable/tab_push_selector"
+                    android:text="push" />
+            </RadioGroup>
+        </LinearLayout>
+
+    </RelativeLayout>
+</merge>

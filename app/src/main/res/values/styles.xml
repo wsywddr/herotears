@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/whitesmoke</item>
+        <item name="colorPrimaryDark">@color/whitesmoke</item>
+        <item name="colorAccent">@color/red_main</item>
+        <item name="toolbarStyle">@style/MyToolBar</item>
+    </style>
+
+    <style name="MyToolBar" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">@dimen/wSize8</item>
+    </style>
+
+    <!-- main activity bottom menus-->
+    <style name="MainActivityBottomMenuItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:padding">3dp</item>
+    </style>
+
+</resources>
