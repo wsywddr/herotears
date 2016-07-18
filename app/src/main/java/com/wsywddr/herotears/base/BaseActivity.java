@@ -1,5 +1,6 @@
 package com.wsywddr.herotears.base;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -8,7 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.wsywddr.herotears.util.AppConfig;
 import com.wsywddr.herotears.util.AppManager;
 
-public class BaseActivity extends AppCompatActivity {
+public class BaseActivity extends Activity {
 
     protected SharedPreferences preference;
 

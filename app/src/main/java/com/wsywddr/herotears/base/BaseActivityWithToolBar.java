@@ -70,7 +70,7 @@ public abstract class BaseActivityWithToolBar extends BaseActivity implements Vi
         textRight1 = (TextView) view.findViewById(R.id.right1);
         textRight2 = (TextView) view.findViewById(R.id.right2);
         toolbar.setTitle("");
-        setSupportActionBar(toolbar);
+//        setSupportActionBar(toolbar);
         lefttv1.setOnClickListener(this);
         tv_right.setOnClickListener(this);
         tv_back.setOnClickListener(this);
