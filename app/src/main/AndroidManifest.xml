@@ -31,8 +31,8 @@
         android:supportsRtl="true"
         android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
         <activity
-            android:configChanges="screenSize|keyboardHidden|orientation"
             android:screenOrientation="landscape"
+            android:configChanges="screenSize|keyboardHidden|orientation"
             android:name=".activity.StartActivity_">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
